@@ -1,0 +1,130 @@
+.contact__form {
+  padding-top: 120px;
+
+  &__inner {
+    justify-content: space-between;
+  }
+
+  &__left {
+    & > p{
+      margin: 40px 0 70px 0;
+    }
+
+    & .input-line {
+      margin-bottom: 40px;
+      justify-content: space-between;
+    }
+
+    & input {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #6D6D6D;
+      padding: 10px 30px;
+      background-repeat: no-repeat;
+      background-position: center left;
+      display: block;
+      flex: 0 1 calc(100% / 2 - 10px);
+      font-size: 17px;
+      line-height: 20px;
+
+      &::-webkit-input-placeholder {
+        color: #6D6D6D;
+        font-size: 17px;
+        line-height: 22px;
+      }
+
+      &[name="name"] {
+        background-image: url('../../../assets/images/name.svg');
+      }
+      &[name="phone"] {
+        background-image: url('../../../assets/images/phone.svg');
+      }
+      &[name="email"] {
+        background-image: url('../../../assets/images/email.svg');
+      }
+      &[name="city"] {
+        background-image: url('../../../assets/images/city.svg');
+      }
+    }
+
+    & textarea {
+      resize: none;
+      display: block;
+      width: 100%;
+      min-height: 70px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #6D6D6D;
+      font-size: 17px;
+      line-height: 20px;
+      background-repeat: no-repeat;
+      background-position: left 3px;
+      padding: 0px 30px;
+      background-image: url('../../../assets/images/message.svg');
+
+      &::-webkit-input-placeholder {
+        color: #6D6D6D;
+        font-size: 17px;
+        line-height: 22px;
+      }
+    }
+
+    & button {
+      cursor: pointer;
+      margin-top: 50px;
+      outline: none;
+      border: none;
+      text-transform: uppercase;
+      padding: 15px 20px;
+      color: #fff;
+      background-color: var(--primary-color);
+    }
+
+    & form {
+
+    }
+  }
+
+  &__right {
+    display: block;
+  }
+}
+
+@media (max-width: 1199px) {
+  .contact__form {
+    padding-top: 90px;
+
+    &__right {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .contact__form {
+    padding-top: 50px;
+
+    &__left {
+
+      & > p{
+       margin-bottom: 40px;
+      }
+      
+      & .input-line {
+        display: block;
+        margin-bottom: 0;
+
+        &:last-of-type {
+          & input:last-child {
+            margin-bottom: 30px;
+          }
+        }
+      }
+
+      & input {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+    }
+  }
+}

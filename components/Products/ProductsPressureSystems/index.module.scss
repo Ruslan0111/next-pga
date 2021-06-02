@@ -1,0 +1,64 @@
+.products__pressure-systems {
+  padding-top: 110px;
+  padding-bottom: 25px;
+
+  &__left {
+    flex: 0 1 50%;
+
+    & h1 {
+      font-size: 35px;
+      line-height: 47px;
+      margin-bottom: 30px;
+    }
+
+    & p {
+      padding-right: 100px;
+    }
+  }
+
+  &__right {
+    padding-top: 30px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    flex: 0 1 50%;
+
+    & img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .products__pressure-systems {
+    &__left {
+      & p {
+        padding-right: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .products__pressure-systems {
+    padding-top: 70px;
+
+    &__left {
+      & h1 {
+        font-size: 32px;
+        line-height: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .products__pressure-systems {
+    padding-top: 50px;
+    
+    &__inner  {
+      display: block;
+    }
+  }
+}

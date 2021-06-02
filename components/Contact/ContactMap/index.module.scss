@@ -1,0 +1,133 @@
+.contact__map {
+  background-color: var(--gray-bg);
+
+  &__left {
+    width: 60%;
+  }
+
+  &__right {
+    padding: 56px 0 130px 60px;
+
+    & h3 {
+      font-size: 29px;
+      line-height: 38px;
+      margin-bottom: 40px;
+    }
+
+    & a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    & ul {
+      display: block;
+      list-style: none;
+
+      & li {
+        margin-bottom: 40px;
+        max-width: 250px;
+        line-height: 21px;
+      }
+
+      & li{
+        padding-left: 30px;
+        position: relative;
+      }
+
+      & li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      & li:nth-child(1)::before {
+        background-image: url('../../../assets/images/city.svg');
+      }
+
+      & li:nth-child(2)::before {
+        background-image: url('../../../assets/images/phone.svg');
+      }
+
+      & li:nth-child(3)::before {
+        background-image: url('../../../assets/images/email.svg');
+      }
+
+      & li:nth-child(4)::before {
+        background-image: url('../../../assets/images/global.svg');
+      }
+
+      & li:nth-child(2) span {
+        display: block;
+      }
+    }
+  }
+
+  &__social a {
+    margin-right: 20px;
+  }
+
+  .map {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .contact__map {
+
+    &__right {
+      padding-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .contact__map {
+    margin-top: 30px;
+    padding-top: 30px;
+
+    &__inner {
+      display: block;
+    }
+
+    &__left {
+      width: 100%;
+      padding: 0 15px;
+    }
+
+    &__right {
+      padding: 40px 0 100px 15px;
+    }
+
+    .map {
+      height: 400px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .contact__map {
+    .map {
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .contact__map {
+    .map {
+      height: 200px;
+    }
+
+    &__right {
+      & h3 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+  }
+}

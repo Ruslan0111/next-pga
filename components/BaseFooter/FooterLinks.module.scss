@@ -1,0 +1,31 @@
+.footer__links-item {
+  width: 25%;
+}
+.footer__links-item ul {
+  padding-left: 25px;
+  margin-bottom: 13px;
+  list-style: none;
+  color: #fff;
+}
+.footer__links-item ul li:first-child {
+  text-transform: uppercase;
+  margin-bottom: 7.5px;
+}
+.footer__links-item ul li {
+  line-height: 26px;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: #1890ff;
+}
+
+@media (max-width: 991px) {
+  .footer__links-item {
+    width: 50%;
+  }
+}

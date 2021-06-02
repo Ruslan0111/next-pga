@@ -1,0 +1,25 @@
+.news-card {
+  box-shadow: 0px 3px 6px #00000019;
+}
+
+.news-card__img {
+  position: relative;
+}
+
+.news-card__img img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.news-card__img button {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--primary-color);
+  border: none;
+  padding: 5px 20px 5px 10px;
+  cursor: pointer;
+}

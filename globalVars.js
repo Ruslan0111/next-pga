@@ -1,0 +1,1 @@
+export const imageUrl = 'http://pga.uz/images/';
